@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Crafts Store</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+        .primary-bg {
+            background-color: #5FA052; /* Adjust to your preferred color */
+        }
+        .accent-bg {
+            background-color: #81db6f; /* Adjust to your preferred color */
+        }
+        .text-accent {
+            color: #3ba126; /* Adjust to your preferred color */
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header Section -->
+    <header class="primary-bg text-white py-4 px-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Handmade Crafts Store</h1>
+            <nav class="space-x-4 transition-all transform ">
+                <a href="#" class="hover:text-black transition-all duration-300 transform">Home</a>
+                <a href="#" class="hover:text-black transition-all duration-300 transform">Shop</a>
+                <a href="#" class="hover:text-black transition-all duration-300 transform">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-16 text-center">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-accent">Discover Unique Handmade Crafts</h2>
+            <p class="mt-4 text-lg">Explore our collection of beautifully crafted items.</p>
+            <a href="#" class="mt-6 inline-block border text-primary-bg py-2 px-6 rounded-full text-lg hover:bg-primary-bg hover:bg-black hover:text-white transition duration-300">Shop Now</a>
+        </div>
+    </section>
+
+
+
+    <!-- Featured Products Section -->
+
+    <section class="py-12 px-12">
+        <div>
+            <h3 class="text-2xl font-semibold">Price Range</h3>
+            <input type="range" min="0" max="100" value="40" class="range range-xs w-72 justify-center mb-10" />
+        <div>
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-semibold">Featured Products</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-6">
+                <!-- Product Cards go here -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1678791673777-57274271e434?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 1</h3>
+                        <p class="text-gray-600">Price</p>
+
+                        <div class="py-2">
+                            <label for="my_modal_7" class="btn">Details</label>
+                            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                            <div class="modal">
+                                <div class="modal-box">
+                                  <h3 class="text-lg font-bold">Hello!</h3>
+                                  <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus sed nisi aspernatur reprehenderit libero cumque dicta odit, ut, aliquam neque laborum quibusdam magnam facere a veritatis dignissimos nulla iste praesentium?</p>
+                                </div>
+                                <label class="modal-backdrop" for="my_modal_7">Close</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1604095879468-03fd4a4afaf2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1457&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 2</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1588766381125-c29bced9d2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 3</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1544928147-cc3d2d412d46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 4</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1555885425-f605efd01224?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1370&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 5</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1612102277785-3be944987533?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 6</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1525433019229-a2449628415e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 7</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-all transform hover:scale-110">
+                    <img src="https://images.unsplash.com/photo-1578687430708-d6447cc75dbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1335&q=80" alt="Product 1" class="w-full h-48 object-cover">
+                    <div class="p-4 ">
+                        <h3 class="text-xl font-semibold">Product 8</h3>
+                        <p class="text-gray-600">Price</p>
+                        <a href="#" class="block mt-4 text-accent hover:underline">View Details</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+     <!-- Newsletter Signup Section -->
+     <section class="py-8 newsletter-bg bg-gray-400">
+        <div class="container mx-auto text-center">
+            <h3 class="text-2xl font-semibold text-white">Subscribe to Our Newsletter</h3>
+            <p class="text-white mt-2">Stay updated on the latest arrivals and exclusive offers.</p>
+            <div class="mt-4 max-w-md mx-auto">
+                <input type="email" placeholder="Enter your email" class="w-full py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-accent">
+                <button class="mt-2 text-primary-bg py-2 px-6 border rounded-full hover:bg-primary-bg hover:bg-white transition duration-300">Subscribe</button>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Footer Section -->
+    <footer class="primary-bg text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Handmade Crafts Store</p>
+        </div>
+    </footer>
+</body>
+</html>
